@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51867C52A039C55002CAE0D /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51867C42A039C55002CAE0D /* CameraService.swift */; };
 		E5DE40B42A0392D500CE2F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40B32A0392D500CE2F7A /* AppDelegate.swift */; };
 		E5DE40B62A0392D500CE2F7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40B52A0392D500CE2F7A /* SceneDelegate.swift */; };
-		E5DE40B82A0392D500CE2F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40B72A0392D500CE2F7A /* ViewController.swift */; };
+		E5DE40B82A0392D500CE2F7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE40B72A0392D500CE2F7A /* MainViewController.swift */; };
 		E5DE40BD2A0392D900CE2F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE40BC2A0392D900CE2F7A /* Assets.xcassets */; };
 		E5DE40C02A0392D900CE2F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DE40BE2A0392D900CE2F7A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E51867C42A039C55002CAE0D /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		E5DE40B02A0392D500CE2F7A /* ColotScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColotScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DE40B32A0392D500CE2F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5DE40B52A0392D500CE2F7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5DE40B72A0392D500CE2F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5DE40B72A0392D500CE2F7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E5DE40BC2A0392D900CE2F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5DE40BF2A0392D900CE2F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5DE40C12A0392D900CE2F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +58,8 @@
 			children = (
 				E5DE40B32A0392D500CE2F7A /* AppDelegate.swift */,
 				E5DE40B52A0392D500CE2F7A /* SceneDelegate.swift */,
-				E5DE40B72A0392D500CE2F7A /* ViewController.swift */,
+				E5DE40B72A0392D500CE2F7A /* MainViewController.swift */,
+				E51867C42A039C55002CAE0D /* CameraService.swift */,
 				E5DE40BC2A0392D900CE2F7A /* Assets.xcassets */,
 				E5DE40BE2A0392D900CE2F7A /* LaunchScreen.storyboard */,
 				E5DE40C12A0392D900CE2F7A /* Info.plist */,
@@ -134,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DE40B82A0392D500CE2F7A /* ViewController.swift in Sources */,
+				E51867C52A039C55002CAE0D /* CameraService.swift in Sources */,
+				E5DE40B82A0392D500CE2F7A /* MainViewController.swift in Sources */,
 				E5DE40B42A0392D500CE2F7A /* AppDelegate.swift in Sources */,
 				E5DE40B62A0392D500CE2F7A /* SceneDelegate.swift in Sources */,
 			);
@@ -278,10 +282,12 @@
 				DEVELOPMENT_TEAM = L8ZXWNP3PM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColotScanner/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,10 +311,12 @@
 				DEVELOPMENT_TEAM = L8ZXWNP3PM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColotScanner/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
